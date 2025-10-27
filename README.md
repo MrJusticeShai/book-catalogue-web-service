@@ -5,6 +5,18 @@ This service provides a **user-friendly interface** for book collectors to **vie
 
 ---
 
+## ⚠️ Important Note
+
+The Book Catalogue Web Service depends on the **API backend** to function.
+
+Before starting the web application, make sure the **Book Catalogue API is running** (via `mvn spring-boot:run`).
+
+You can find the API source here: [Book Catalogue API](https://github.com/MrJusticeShai/book-catalogue-api)
+
+If the API is not running, the web service will **fail to load books, create, update, or delete entries**.
+
+---
+
 ## 🛠 Technology Stack
 
 | Component         | Version / Detail | Purpose                         |
