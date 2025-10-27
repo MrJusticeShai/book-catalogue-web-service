@@ -18,7 +18,16 @@ import java.util.List;
 @Service
 public class BookWebService {
 
-    private final Client client = ClientBuilder.newClient().register(JacksonFeature.class);
+    private final Client client;
+
+    public BookWebService() {
+        this.client = ClientBuilder.newClient().register(JacksonFeature.class);
+    }
+
+    protected BookWebService(Client client, String apiBaseUrl) {
+        this.client = client;
+        this.apiBaseUrl = apiBaseUrl;
+    }
 
     @Value("${book.api.base-url}")
     private String apiBaseUrl;
