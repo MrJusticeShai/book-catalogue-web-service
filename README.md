@@ -135,11 +135,5 @@ Access the UI at: http://localhost:9001/books
 
 **Preview:**
 ![Error Page Placeholder](./images/error-page.png)
-*Replace with your actual screenshot.*
 
 ---
-
-> 💡 Tip: Store all screenshots in an `images` folder at the root of your project. Use consistent naming like `book-listing.png`, `book-create.png`, etc., so you can quickly update them.
-
-
-
