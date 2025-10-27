@@ -30,7 +30,7 @@
 
                 <div class="d-flex justify-content-end mt-3">
                     <a th:href="@{'/books/edit/' + ${book.isbn}}" class="btn btn-success btn-sm me-2">Edit</a>
-                    <a th:href="@{'/books/delete/' + ${book.isbn}}" onclick="return confirm('Are you sure?');" class="btn btn-danger btn-sm">Delete</a>
+                    <a th:href="@{'/books/delete/' + ${book.isbn}}" onclick="return confirm('Are you sure you want to delete book?');" class="btn btn-danger btn-sm">Delete</a>
                 </div>
             </div>
         </div>
