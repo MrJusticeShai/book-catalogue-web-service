@@ -38,6 +38,8 @@ This service provides a **user-friendly interface** for book collectors to **vie
 
 ## 🚀 Getting Started
 
+## 🧩 Local Setup — Maven & Build Instructions
+
 Follow these steps to **clone, build, and run** the web application locally.
 
 <details>
@@ -48,11 +50,21 @@ Follow these steps to **clone, build, and run** the web application locally.
 git clone https://github.com/MrJusticeShai/book-catalogue-web-service.git
 cd book-catalogue-web-service
 
-# Build the project
-mvn clean install
+#  Install Maven (if not already installed)
+# macOS (via Homebrew)
+brew install maven
 
+# Linux (Debian/Ubuntu)
+sudo apt update
+sudo apt install maven -y
+
+# Build the project
+mvn clean package
 # Run the Spring Boot web application
 mvn spring-boot:run
+#  Run unit tests
+mvn test
+
 ```
 The application will be accessible at: http://localhost:9001/books
 </details>
@@ -66,11 +78,17 @@ The application will be accessible at: http://localhost:9001/books
 git clone https://github.com/MrJusticeShai/book-catalogue-web-service.git
 cd book-catalogue-web-service
 
-# Build the project
-mvn clean install
+# Download Apache Maven from https://maven.apache.org/download.cgi
+# Extract and add the 'bin' directory to your PATH
+# Example: C:\apache-maven-3.9.9\bin
 
+# Build and package the project
+mvn clean package
+#  Run unit tests
+mvn test
 # Run the Spring Boot web application
 mvn spring-boot:run
+
 ```
 
 Access the UI at: http://localhost:9001/books
